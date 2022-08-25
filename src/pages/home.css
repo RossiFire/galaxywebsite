@@ -1,0 +1,45 @@
+.presentation-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(50vw, 70vw, 90vw)
+}
+.presentation-box > div{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.presentation-box span{
+    color: white;
+    font-family: Galaxy;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.presentation-box span{
+    width: clamp(60%, 70%, 90%);
+}
+span label, .creator-label{
+font-family: Galaxy;
+background: -webkit-linear-gradient(#FA7B0A, #FDDF9F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+.creator-label a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: -webkit-linear-gradient(0deg,#FA7B0A, #FDDF9F);
+    left: 0;
+    bottom: -1px;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .4s;
+}
