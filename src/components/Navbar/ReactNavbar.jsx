@@ -2,6 +2,8 @@ import {React, useEffect, useState} from "react"
 import Tilt from 'react-parallax-tilt';
 import './navbar.css'
 import { nanoid } from "nanoid";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Navbar() {
 
@@ -13,11 +15,12 @@ export default function Navbar() {
     {iconName: 'fa-brands fa-instagram', href: 'https://instagram.com/galaxylifeofficial'},
   ]
   const links =[
-    {name: 'home', href: '/galaxywebsite'},
-    {name: 'Galaxy', href: '/galaxywebsite/galaxy'},
-    {name: 'History', href: '/galaxywebsite/history'},
+    {name: 'home', href: ''},
+    {name: 'Galaxy', href: '/galaxy'},
+    {name: 'History', href: '//history'},
     {name: 'About Phoenix', href: 'https://phoenixnetwork.net/', isBlank: true, icon: 'fa-solid fa-up-right-from-square'},
   ]
+  let navigate = useNavigate()
 
   useEffect(()=>{ setbuttonIcon('fa fa-download')},[])
     return (
@@ -27,7 +30,7 @@ export default function Navbar() {
           return (
             <div className="nav-link" key={nanoid()}>
                 <Tilt tiltEnable="true" scale={1.2} key={nanoid()}>
-                  <a href={link.href} key={nanoid()} target={link.isBlank ? '_blank' : '_parent'} rel="noreferrer">{link.name}</a>
+                  <span onClick={()=> navigate(link.href)} key={nanoid()} target={link.isBlank ? '_blank' : '_parent'} rel="noreferrer">{link.name}</span>
                   <i className={link.icon}></i>
               </Tilt> 
               </div>

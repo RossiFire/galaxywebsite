@@ -28,7 +28,7 @@
     width: 80%;
 }
 
-.left-nav a{
+.left-nav span{
     color: #ecf0f1;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -38,7 +38,7 @@
 }
 .left-nav .nav-link{cursor: pointer; margin-right: 3rem;}
 .nav-link svg{ color: white; margin-left: 10px;}
-.left-nav a:hover{
+.left-nav span:hover{
     background: -webkit-linear-gradient(#FA7B0A, #FDDF9F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
