@@ -13,10 +13,10 @@ export default function Navbar() {
     {iconName: 'fa-brands fa-instagram', href: 'https://instagram.com/galaxylifeofficial'},
   ]
   const links =[
-    {name: 'home', href: '/', icon: 'fa-solid fa-up-right-from-square'},
-    {name: 'Galaxy', href: '/galaxy'},
-    {name: 'History', href: '/history'},
-    {name: 'About Phoenix', href: '/altro'},
+    {name: 'home', href: '/galaxywebsite'},
+    {name: 'Galaxy', href: '/galaxywebsite/galaxy'},
+    {name: 'History', href: '/galaxywebsite/history'},
+    {name: 'About Phoenix', href: 'https://phoenixnetwork.net/', isBlank: true, icon: 'fa-solid fa-up-right-from-square'},
   ]
 
   useEffect(()=>{ setbuttonIcon('fa fa-download')},[])
@@ -27,7 +27,8 @@ export default function Navbar() {
           return (
             <div className="nav-link" key={nanoid()}>
                 <Tilt tiltEnable="true" scale={1.2} key={nanoid()}>
-                  <a href={link.href} key={nanoid()}>{link.name}</a>
+                  <a href={link.href} key={nanoid()} target={link.isBlank ? '_blank' : '_parent'} rel="noreferrer">{link.name}</a>
+                  <i className={link.icon}></i>
               </Tilt> 
               </div>
           );

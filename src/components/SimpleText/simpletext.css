@@ -1,0 +1,13 @@
+span.simple-text{
+    font-family: Galaxy;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+span.simple-text:hover{
+    background: -webkit-linear-gradient(#FA7B0A, #FDDF9F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

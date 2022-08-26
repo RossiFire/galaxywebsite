@@ -6,6 +6,8 @@ import Navbar from './components/Navbar/ReactNavbar';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import GalxyPage from './pages/galaxy/galaxy';
+import HistoryPage from './pages/history/history'
 
 const App = () => {
   const particlesInit = useCallback(async (engine) => { await loadFull(engine);}, []);
@@ -67,7 +69,7 @@ const App = () => {
               default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: 2,
             straight: false,
           },
           number: {
@@ -94,9 +96,9 @@ const App = () => {
       <Router>
         <Fragment>
         <Routes>
-            <Route exact path='/' element={<Home/>} />
-            <Route exact path='/register' element={<Home/>}/>
-            <Route exact path='/login' element={<Home/>}/>
+            <Route exact path='/galaxywebsite/' element={<Home/>} />
+            <Route exact path='/galaxywebsite/galaxy' element={<GalxyPage/>}/>
+            <Route exact path='/galaxywebsite/history' element={<HistoryPage/>}/>
         </Routes>
       </Fragment>
       </Router>
