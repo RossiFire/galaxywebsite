@@ -49,5 +49,19 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "author": {
+    "name": "RossiFire",
+    "url": "https://github.com/RossiFire"
+  },
+  "repository": {
+    "url": "https://github.com/RossiFire/galaxywebsite"
+  },
+  "keywords": [
+    "Galaxy Life",
+    "WebSite",
+    "VideoGame",
+    "Phoenix",
+    "Phoenix Network"
+  ]
 }

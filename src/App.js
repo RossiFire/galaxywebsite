@@ -14,7 +14,7 @@ const App = () => {
   const particlesLoaded = useCallback(async (container) => { console.log(container); }, []);
 
   return (
-    <div>
+    <>
       <Particles
       id="tsparticles"
       init={particlesInit}
@@ -93,16 +93,12 @@ const App = () => {
       }}
     />
       <Navbar/>
-      <Router>
-        <Fragment>
-        <Routes>
-            <Route exact path='/galaxywebsite/' element={<Home/>} />
-            <Route exact path='/galaxywebsite/galaxy' element={<GalxyPage/>}/>
-            <Route exact path='/galaxywebsite/history' element={<HistoryPage/>}/>
-        </Routes>
-      </Fragment>
-      </Router>
-    </div>
+      <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/galaxy' element={<GalxyPage/>}/>
+          <Route exact path='/history' element={<HistoryPage/>}/>
+      </Routes>
+    </>
   );
 }
 
