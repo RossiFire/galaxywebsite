@@ -18,7 +18,7 @@ export default function Navbar() {
     {name: 'home', href: ''},
     {name: 'Galaxy', href: '/galaxy'},
     {name: 'History', href: '//history'},
-    {name: 'About Phoenix', href: 'https://phoenixnetwork.net/', isBlank: true, icon: 'fa-solid fa-up-right-from-square'},
+    {name: 'Phoenix', href: 'https://phoenixnetwork.net/', isBlank: true, icon: 'fa-solid fa-up-right-from-square'},
   ]
   let navigate = useNavigate()
 

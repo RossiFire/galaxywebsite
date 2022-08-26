@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: clamp(50vw, 70vw, 90vw)
+    width: clamp(50vw, 80vw, 90vw)
 }
 .presentation-box > div{
     padding: 1rem;
@@ -19,10 +19,7 @@
     color: white;
     font-family: Galaxy;
     letter-spacing: 1px;
-    font-size: 30px;
-}
-.presentation-box span{
-    width: clamp(60%, 70%, 90%);
+    font-size: clamp(0.875rem, 0.6242rem + 1.1465vw, 2rem);
 }
 span label, .creator-label{
 font-family: Galaxy;
@@ -43,3 +40,10 @@ background: -webkit-linear-gradient(#FA7B0A, #FDDF9F);
     z-index: -1;
     transition: .4s;
 }
+
+
+/* @media screen and (max-width: 1000px){
+    .presentation-box span{
+        font-size: 22px;
+    }
+  } */
