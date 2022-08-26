@@ -20,7 +20,15 @@ export default function Navbar() {
     {name: 'History', href: '//history'},
     {name: 'Phoenix', href: 'https://phoenixnetwork.net/', isBlank: true, icon: 'fa-solid fa-up-right-from-square'},
   ]
-  let navigate = useNavigate()
+  const navigate = useNavigate()
+
+  const onLinkButton = (link)=>{
+    if(link.startsWith('https://')){
+      window.open(link, '_blank').focus();
+    }else{
+      navigate(link)
+    }
+  }
 
   useEffect(()=>{ setbuttonIcon('fa fa-download')},[])
     return (
@@ -30,7 +38,7 @@ export default function Navbar() {
           return (
             <div className="nav-link" key={nanoid()}>
                 <Tilt tiltEnable="true" scale={1.2} key={nanoid()}>
-                  <span onClick={()=> navigate(link.href)} key={nanoid()} target={link.isBlank ? '_blank' : '_parent'} rel="noreferrer">{link.name}</span>
+                  <span onClick={()=> onLinkButton(link.href)} key={nanoid()} target={link.isBlank ? '_blank' : '_parent'} rel="noreferrer">{link.name}</span>
                   <i className={link.icon}></i>
               </Tilt> 
               </div>
