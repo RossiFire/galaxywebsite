@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/galaxywebsite/static/css/main.f9174d52.css",
-    "main.js": "/galaxywebsite/static/js/main.ef1508c8.js",
+    "main.css": "/galaxywebsite/static/css/main.d7d7d78b.css",
+    "main.js": "/galaxywebsite/static/js/main.4482da9d.js",
     "static/js/787.d273a8a7.chunk.js": "/galaxywebsite/static/js/787.d273a8a7.chunk.js",
     "static/media/GhostKidAOE_Pro.ttf": "/galaxywebsite/static/media/GhostKidAOE_Pro.2b7a988061deb3aeafd8.ttf",
     "static/media/phoenix-round.png": "/galaxywebsite/static/media/phoenix-round.08cc372dbc1268b3f2e0.png",
     "index.html": "/galaxywebsite/index.html",
-    "main.f9174d52.css.map": "/galaxywebsite/static/css/main.f9174d52.css.map",
-    "main.ef1508c8.js.map": "/galaxywebsite/static/js/main.ef1508c8.js.map",
+    "main.d7d7d78b.css.map": "/galaxywebsite/static/css/main.d7d7d78b.css.map",
+    "main.4482da9d.js.map": "/galaxywebsite/static/js/main.4482da9d.js.map",
     "787.d273a8a7.chunk.js.map": "/galaxywebsite/static/js/787.d273a8a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9174d52.css",
-    "static/js/main.ef1508c8.js"
+    "static/css/main.d7d7d78b.css",
+    "static/js/main.4482da9d.js"
   ]
 }
